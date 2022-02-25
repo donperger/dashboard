@@ -298,7 +298,7 @@ img {
 
  .announcments {
      display: grid;
-     grid-template-rows: 5rem 6fr;
+     grid-template-rows: 5rem 0.5fr;
      gap: 1rem;
      padding: 1rem;
  }
