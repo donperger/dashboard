@@ -50,15 +50,20 @@ table {
 
 * {
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    color: #424242;
 }
 
 :root {
     --bg-color: #ecfeff;
-    --sidebar-color: #0284c7;
+    --sidebar-color: rgb(2, 132, 199);
     --light-letter: #fff;
     --header-bg-color: #f8fafc;
     --profile-icon-right-margin: 10px;
     --header-padding: 0.65rem;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 body {
@@ -106,12 +111,6 @@ img {
     width: 30px;
 }
 
-.search-btn:hover,
-.notification:hover,
-.header-btn:hover {
-    cursor: pointer;
-}
-
 .search-field {
     background-color: var(--bg-color);
     border: 1px solid rgba(42, 42, 42, .3);
@@ -147,7 +146,7 @@ img {
 
 .greeting {
     font-weight: 600;
-    align-self: center;/
+    align-self: center;
 }
 
 .user {
@@ -231,12 +230,7 @@ img {
     border: none;
     background-color: var(--sidebar-color);
     color: #fff;
-    font-weight: 500;
     font-size: 1.5rem;
-}
-
-.sidebar-buttons:hover {
-    cursor: pointer;
 }
 
 .sidebar-buttons img {
@@ -263,10 +257,40 @@ img {
      grid-row: 2 / 4;
      display: grid;
      grid-template-columns: repeat(2, 1fr);
+     padding: 1rem;
+     gap: 1rem;
  }
 
  .project-title {
      grid-column: 1 / 3;
+     place-self: center start;
+     font-size: 2rem;
+     font-weight: bold;
+ }
+
+ .projects {
+    background-color: var(--header-bg-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 5px 5px 29px -5px rgba(110,110,110,1);
+    -moz-box-shadow: 5px 5px 29px -5px rgba(110,110,110,1);
+    box-shadow: 5px 5px 29px -5px rgba(110,110,110,1);
+    display: grid;
+    border-left: 1rem solid orange;
+ }
+
+ .project-header {
+     font-size: 1.3rem;
+     font-weight: 600;
+ }
+
+ .porject-btn-container {
+     place-self: end end;
+ }
+
+ .prj-btn {
+     background-color: var(--header-bg-color);
+     border: none;
  }
 
  .announcment-container {
